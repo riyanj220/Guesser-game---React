@@ -38,6 +38,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
+        env: 
+            BASE_URL: '/Guesser-game---React/'
         run: npm run build
       - name: 'Run unit tests'
         run: npm run test
